@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+</head>
+<body>
+    <main>
+
+        <!-- Title and Description -->
+        <h1 id="title"> Beginners Survey </h1>
+        <p id="description"> This survey form is intended to gather details of the user who are interested in CTF or have some prior knowledge of CTFs.  </p>
+        <!-- End Title and Description-->
+
+        <!-- Form -->
+        <form action="" id="survey-form">
+
+
+
+            <!-- Name and User Details -->
+            <div class="form-group">
+                <label for="name" id="name-label">Full Name 
+                    <br>
+                    <input type="text" id="name" placeholder="Enter your Full Name" required>
+                </label>
+            </div>
+
+            
+            <div class="form-group">  
+                <label for="email" id="email-label">E-mail
+                    <br>  
+                    <input type="email" id="email" placeholder="Enter your Email address" required>
+                </label>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="mobile-number" id="mobile-number-label">
+                    <p>Enter your Contact Number</p>   
+                    <input type="tel" id="mobile-number" pattern="[0-9]{10}" required maxlength="10" minlength="10" placeholder="Mobile Number">
+                </label>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="number" id="number-label">
+                    Age <br>
+                    <input type="number" id="number" min="10" max="99" placeholder="Age">
+                </label>
+            </div>
+            
+            <br>
+            <div class="form-group">
+                <label for="dropdown" id="gender-dropdown">
+                    Gender <select name="gender" id="dropdown" required>
+                        <option value="" disabled="" selected="">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>        
+            </div>
+            <!-- End User Details-->
+
+
+
+            <!-- Questions -->
+            <div class="form-group">
+                <label class="ques-1">
+                    <p class="q1">Have you heared of CTFs before?</p>
+                    <label>
+                        <input type="radio" class="ans-1" name="ques-1" value="yes"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" class="ans-1" name="ques-1" value="no" checked> No
+                    </label>
+                </label>
+            </div>
+
+            
+            <div class="form-group">
+                <label class="ques-2">
+                    <p class="q2">Did you participate in CTFs before?</p>
+                    <label>
+                        <input type="radio" class="ans-2" name="ques-2" value="yes"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" class="ans-2" name="ques-2" value="no" checked> No
+                    </label>
+                </label>    
+            </div>    
+            
+
+            <div class="form-group">
+                <label class="ques-3">
+                    <p class="q3">Which challenges did you solve before? (Optional)</p>
+                    <label>
+                        <input type="checkbox" name="ans-3" id="jeopardy" value="Jeopardy"> Jeopardy
+                    </label>
+                    <label>
+                        <input type="checkbox" name="ans-3" id="hardware" value="Hardware"> Hardware
+                    </label>
+                    <label>
+                        <input type="checkbox" name="ans-3" id="attack/defense" value="Attack/Defense"> Attack/Defense
+                    </label>
+                    <label>
+                        <input type="checkbox" name="ans-3" id="koth" value="KotH"> KotH
+                    </label>
+                </label>
+            </div>
+            
+
+            <!-- End Questions-->
+            
+
+            <!-- Text Area-->
+            <div class="form-group">
+                <label for="textarea">
+                    <p class="text">Have any suggestion or additional resources?</p>
+                    <textarea name="message" id="textarea" placeholder="Enter your message here"></textarea>
+                </label>  
+            </div>
+            
+            <!-- End Text Area -->
+
+
+            <!-- Submit and Reset Button -->
+
+            <input type="submit" value="Submit" id="submit" name="submit-button">
+            <input type="reset" id= reset>
+            <!-- End Submit and Reset Button-->
+
+
+        </form>
+        <!-- End Form-->
+
+
+    </main>
+
+    <!-- FCC test-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
